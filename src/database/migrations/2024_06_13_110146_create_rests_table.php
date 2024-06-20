@@ -32,7 +32,6 @@ class CreateRestsTable extends Migration
         Schema::table('rests', function (Blueprint $table) {
             $table->dropForeign(['work_id']);
         });
-        
         Schema::dropIfExists('rests');
     }
 }
