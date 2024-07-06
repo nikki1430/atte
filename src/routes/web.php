@@ -44,21 +44,4 @@ Route::post('/attendance/user', [AttendanceController::class, 'perUser'])
 // 管理ページ / ユーザー一覧
 Route::get('/user', [AttendanceController::class, 'user'])->name('user');
 
-// メール通知
-// Route::get('/email/verify', function () {
-//     return view('auth.verify-email');
-// })->middleware('auth')->name('verification.notice');
 
-// // メール確認
-// Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-//     $request->fulfill();
-
-//     return redirect('/home');
-// })->middleware(['auth', 'signed'])->name('verification.verify');
-
-// // メール再送信
-// Route::post('/email/verification-notification', function (Request $request) {
-//     $request->user()->sendEmailVerificationNotification();
-
-//     return back()->with('message', 'Verification link sent!');
-// })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
