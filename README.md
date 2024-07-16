@@ -24,7 +24,34 @@ ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
 ## テーブル設計
 <img width="475" alt="テーブル仕様書" src="https://github.com/nikki1430/atte/assets/164667475/ba7023ff-6919-4475-b3ea-37faea674b9c">
 
+##環境構築
+###セットアアップ
+atte
+├── docker
+│   ├── mysql
+│   │   ├── data
+│   │   └── my.cnf
+│   ├── nginx
+│   │   └── default.conf
+│   └── php
+│       ├── Dockerfile
+│       └── php.ini
+├── docker-compose.yml
+└── src
+
+* 上記ディレクトリを作成
+* 各ファイルの記述を終えたら
+  docker-compose up -d --build　でビルド
+***
+##laravelインストール
+* docker-compose exec php bash　(phpコンテナ内にログイン)
+* composer -v (composerインストール)
+* composer create-project "laravel/laravel=8.*" . --prefer-dist (laravelプロジェクト作成)
+***
+
+
 ##ER図
-![atte](https://github.com/nikki1430/atte/assets/164667475/9509be71-588a-4d90-8a3e-c5fc1d15bae0)
+![atte01](https://github.com/user-attachments/assets/d0e213f0-0077-4549-93ac-7239e60133fd)
+
 
 
