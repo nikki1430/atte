@@ -28,18 +28,7 @@ ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
 ## 環境構築
 
 ### セットアアップ
-atte
-├── docker
-│   ├── mysql
-│   │   ├── data
-│   │   └── my.cnf
-│   ├── nginx
-│   │   └── default.conf
-│   └── php
-│       ├── Dockerfile
-│       └── php.ini
-├── docker-compose.yml
-└── src
+<img width="192" alt="スクリーンショット 2024-07-16 12 37 51" src="https://github.com/user-attachments/assets/405fb449-de97-4810-b2b9-3389a6ed760c">
 
 * 上記ディレクトリを作成
 * 各ファイルの記述を終えたら
@@ -113,9 +102,11 @@ atte
 * php artisan key:generate
 * envファイルを設定して、RDSとアプリを繋げる
 * php artisan migrate:fresh　--seed (migrateしてDBを作成する。)
-* 
+* sudo chmod -R 777 storage  (app/storageの権限変更)
 ##ER図
-![atte01](https://github.com/user-attachments/assets/d0e213f0-0077-4549-93ac-7239e60133fd)
+<img width="724" alt="スクリーンショット 2024-07-16 12 39 17" src="https://github.com/user-attachments/assets/d0441448-ae55-48cd-8ae9-66a09d6bb460">
+
+
 
 
 
