@@ -24,6 +24,9 @@ ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
 ## テーブル設計
 <img width="475" alt="テーブル仕様書" src="https://github.com/nikki1430/atte/assets/164667475/ba7023ff-6919-4475-b3ea-37faea674b9c">
 
+## ER図
+<img width="724" alt="スクリーンショット 2024-07-16 12 39 17" src="https://github.com/user-attachments/assets/d0441448-ae55-48cd-8ae9-66a09d6bb460">
+
 ***
 ## 環境構築
 
@@ -103,8 +106,7 @@ ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
 * envファイルを設定して、RDSとアプリを繋げる
 * php artisan migrate:fresh　--seed (migrateしてDBを作成する。)
 * sudo chmod -R 777 storage  (app/storageの権限変更)
-##ER図
-<img width="724" alt="スクリーンショット 2024-07-16 12 39 17" src="https://github.com/user-attachments/assets/d0441448-ae55-48cd-8ae9-66a09d6bb460">
+
 
 
 
