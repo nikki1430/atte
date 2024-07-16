@@ -46,4 +46,5 @@ services:
         container_name: "mailhog"
 # ポートフォワードの指定（ホスト側ポート：コンテナ側ポート）
         ports:
+            - 1025:1025
             - 8025:8025
