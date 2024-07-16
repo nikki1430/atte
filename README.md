@@ -24,9 +24,10 @@ ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
 ## テーブル設計
 <img width="475" alt="テーブル仕様書" src="https://github.com/nikki1430/atte/assets/164667475/ba7023ff-6919-4475-b3ea-37faea674b9c">
 
+***
 ##環境構築
 
-###セットアアップ
+##セットアアップ
 atte
 ├── docker
 │   ├── mysql
