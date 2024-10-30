@@ -1,42 +1,46 @@
-# atte
+# Rese
 ***
 ## アプリケーション概要
-ログインしたユーザーが出勤時間・退勤時間・休憩開始時間・休憩終了時間の登録ができる。
-また、管理画面から、日付別、ユーザー別の出退勤の記録の参照ができる
+飲食店の予約システム
+ログイン後、店舗の予約やお気に入りを追加、レビューを投稿が可能
+管理者権限と店舗代表者権限を切り分けた
+リマインドメールに添付されるQRコードで予約データが'来店'に切り替わる
+決済機能はStripeを使用
 
 ## アプリケーションURL
-ec2-35-78-71-94.ap-northeast-1.compute.amazonaws.com
+ec2-54-249-162-21.ap-northeast-1.compute.amazonaws.com
 
 ## 機能一覧
-* ログイン機能
-* メール認証機能
-* 出退勤・休憩入・戻時間の打刻
-* 日付別の勤怠状況の参照
-* ユーザー別の勤怠状況の参照
-* ユーザー一覧の参照
+*ログイン機能
+*メール認証
+*お気に入り追加/削除
+*予約追加/変更
+*検索、並び替え、レビュー
+*リマインドメール送信
+*QRコードで予約認証
+*決済機能
+*管理者権限で店舗代表者作成
+*ユーザー一覧閲覧
+*お知らせメール送信
+*店舗代表者権限で店舗情報の作成/更新
+*予約確認/変更/削除 
+*csvインポートで新規店舗追加
 
 ## 使用技術
-* Laravel8
-* php8.2
-* mysql:8.0.32
-* Fortify(ユーザー認証・メール認証）
+*docker
+*Laravel 8.x
+*PHP 7.4
+*laravel-fortify
+*laravel-permission
+*Stripe
 
-## テーブル設計
-<img width="475" alt="テーブル仕様書" src="https://github.com/nikki1430/atte/assets/164667475/ba7023ff-6919-4475-b3ea-37faea674b9c">
-
-## ER図
+## テーブル設計・ER図
 <img width="724" alt="スクリーンショット 2024-07-16 12 39 17" src="https://github.com/user-attachments/assets/d0441448-ae55-48cd-8ae9-66a09d6bb460">
 
 ***
 ## 環境構築
 
 ### セットアアップ
-<img width="192" alt="スクリーンショット 2024-07-16 12 37 51" src="https://github.com/user-attachments/assets/405fb449-de97-4810-b2b9-3389a6ed760c">
-
-* 上記ディレクトリを作成
-* 各ファイルの記述を終えたら
-  docker-compose up -d --build　でビルド
-***
 ### laravelインストール
 * docker-compose exec php bash　(phpコンテナ内にログイン)
 * composer -v (composerインストール)
