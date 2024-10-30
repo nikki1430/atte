@@ -35,7 +35,8 @@ ec2-54-249-162-21.ap-northeast-1.compute.amazonaws.com
 *Stripe
 
 ## テーブル設計・ER図
-<img width="724" alt="スクリーンショット 2024-07-16 12 39 17" src="https://github.com/user-attachments/assets/d0441448-ae55-48cd-8ae9-66a09d6bb460">
+![atte drawio](https://github.com/user-attachments/assets/59d19922-034a-472c-b7cf-d380fad1918e)
+
 
 ***
 ## 環境構築
